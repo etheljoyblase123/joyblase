@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffe6d5;
+      color: #333;
+    }
+    header {
+      background: #ff9966;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    nav {
+      text-align: center;
+      margin: 15px 0;
+    }
+    nav a {
+      text-decoration: none;
+      margin: 0 8px;
+      padding: 8px 15px;
+      color: #333;
+      background: #ffd1b3;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: #ff704d;
+      color: white;
+    }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+    .left {
+      flex: 1;
+      text-align: center;
+    }
+    .left img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ff9966;
+      margin-bottom: 20px;
+    }
+    .right {
+      flex: 2;
+    }
+    h2 {
+      margin: 10px 0;
+      color: #cc3300;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .skills {
+      margin-top: 20px;
+    }
+    .skill {
+      margin-bottom: 15px;
+    }
+    .skill-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .progress-bar {
+      width: 100%;
+      background: #ffd1b3;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 18px;
+    }
+    .progress {
+      height: 100%;
+      background: #ff704d;
+      text-align: right;
+      padding-right: 6px;
+      color: white;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    footer {
+      background: #ff9966;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    /* Mobile friendly */
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        text-align: center;
+      }
+      .right {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Me</h1>
+  </header>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/portfolio">Portfolio</a>
+  </nav>
+
+  <main>
+    <!-- Left Side -->
+    <div class="left">
+      <img src="static/profile.jpg" alt="Profile Picture">
+      <h2>Hi, I’m Ethel Joy 👋</h2>
+      <p>
+        I’m a web developer who enjoys building simple, clean, and functional websites.  
+        I focus on user-friendly design and code that works seamlessly across devices.  
+      </p>
+    </div>
+
+    <!-- Right Side -->
+    <div class="right">
+      <h2>My Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <div class="skill-name">HTML & CSS</div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%;">90%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">JavaScript</div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%;">75%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">Python (Flask)</div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%;">80%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">PHP & MySQL</div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%;">70%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+  </footer>
+</body>
+</html>
